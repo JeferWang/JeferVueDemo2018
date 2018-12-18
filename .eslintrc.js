@@ -1,17 +1,18 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
   'extends': [
-    'plugin:vue/strongly-recommended',
-    '@vue/standard'
+    'plugin:vue/essential',
+    '@vue/standard',
   ],
   rules: {
     'no-console': 'off',
-    'no-debugger': 'off'
+    'no-debugger': 'off',
+    'comma-dangle': ['off', 'always'],
   },
   parserOptions: {
-    parser: 'babel-eslint'
-  }
+    parser: 'babel-eslint',
+  },
 }
